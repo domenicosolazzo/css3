@@ -1,4 +1,4 @@
-css3
+Css3
 ====
 
-Css3 Experiments
+Using this repository to experiment a bit of css3

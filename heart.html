@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart experiment</title>
+    <style>
+        body{
+            background-color:lightcoral;
+        }
+        #container-heart1{
+            background-color:white;
+            width:100px;
+            heigth:90px;
+            border: 1px solid whitesmoke;
+            border-radius: 50% 50% 50% 50%;
+        }
+        #heart1{
+
+            position:relative;
+            width:100px;
+            height: 90px;
+        }
+        #heart1:before,
+        #heart1:after{
+            position:absolute;
+            content: "";
+            left: 50px;
+            top: 10px;
+            width:50px;
+            height:80px;
+            background:red;
+            -moz-border-radius: 50px 50px 0 0;
+            -webkit-border-radius: 50px 50px 0 0;
+            border-radius: 50px 50px 0 0;
+            -webkit-transform: rotate(-45deg);
+            -moz-transform: rotate(-45deg);
+            -ms-transform: rotate(-45deg);
+            -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 100%;
+            -moz-transform-origin: 0 100%;
+            -ms-transform-origin: 0 100%;
+            -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+        }
+        #heart1:after{
+            left:0;
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform-origin: 100% 100%;
+            -moz-transform-origin: 100% 100%;
+            -ms-transform-origin: 100% 100%;
+            -o-transform-origin: 100% 100%;
+            transform-origin: 100% 100%;
+        }
+
+    </style>
+</head>
+<body >
+<div id="container-heart1">
+    <div id="heart1">
+
+    </div>
+
+</div>
+
+</body>
+</html>
